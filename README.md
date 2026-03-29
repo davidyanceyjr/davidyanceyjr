@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @davidyanceyjr
 - 👀 I’m interested in ... functional programming, linux and virtualization(KVM, Docker, etc..).  
-- 🌱 I’m currently working on a bash builtin toolset.  
 - 💞️ I’m looking to collaborate on Linux technonlogies and software.
 - 📫 How to reach me ...davidyanceyjr@gmail.com
 
