@@ -1,9 +1,62 @@
-- 👋 Hi, I’m @davidyanceyjr
-- 👀 I’m interested in ... functional programming, linux and virtualization(KVM, Docker, etc..).  
-- 💞️ I’m looking to collaborate on Linux technonlogies and software.
-- 📫 How to reach me ...davidyanceyjr@gmail.com
+# opsman
 
-<!---
-davidyanceyjr/davidyanceyjr is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I build specification-driven tooling, Bash-heavy systems utilities, and practical AI/human workflow scaffolds.
+
+This profile currently centers on repositories that tighten the path from idea -> specification -> implementation -> verification.
+
+## Focus
+
+- Specification-first engineering workflows
+- Bash CLI and shell-native tooling
+- Secure operator tooling and sandboxed execution
+- Reusable templates for AI-assisted development
+
+## Featured Repositories
+
+### `autopsyctl`
+
+Specification-driven CLI tooling for evidence collection and artifact reporting. The current command surface covers collection, schema inspection, target listing, and report-oriented analysis commands such as `summary`, `processes`, `modules`, `mounts`, `net`, and `report`.
+
+### `bash-diamonds`
+
+A suite of Bash loadable builtins for line-oriented text processing. This repo focuses on stream processing, shell-native ergonomics, and contract-preserving behavior backed by specs and tests.
+
+### `codex_wrapper`
+
+A Bash wrapper for running the Codex CLI inside a `systemd` sandbox with explicit filesystem controls. The goal is to keep the tool useful in real repositories without granting uncontrolled host access.
+
+### `spec-foundry`
+
+A reusable template for building project-specific specification repositories. It is designed for turning rough ideas into handoff-ready spec packages with human-gated AI assistance.
+
+### `codex-pair-spec-template`
+
+A starter repository for spec-first human/Codex collaboration. It provides workflow authority, session handoff structure, and an issue-driven path for implementation work.
+
+### `sentinel_spec`
+
+A structured engineering specification repository for Sentinel, organized into canonical sections, subsystem specs, reference material, and archived source splits.
+
+### `ricebox`
+
+A bootstrap scaffold for the `ricebox` runtime repository, organized around an authoritative runtime specification and supporting evidence for implementation.
+
+## Workspace Snapshot
+
+The folders in this workspace currently break down into a few clear groups:
+
+- Product/tool repositories: `autopsyctl`, `bash-diamonds`, `codex_wrapper`, `ricebox`
+- Spec and workflow repositories: `spec-foundry`, `codex-pair-spec-template`, `sentinel_spec`
+- Shell environment utilities: `bash_cleanup`
+- Early or currently sparse scaffold: `the_warden`
+
+## Working Style
+
+- Specs before code when behavior is still ambiguous
+- Small, reviewable implementation slices
+- Repository state as workflow memory
+- Tests and validation wired into normal development flow
+
+## Tech Notes
+
+Most of the work here leans on Bash, shell tooling, Git/GitHub workflows, and repository-local operating contracts for AI-assisted engineering.
