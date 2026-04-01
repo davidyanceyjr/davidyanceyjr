@@ -1,4 +1,4 @@
-# opsman
+# davidyanceyjr@gmail.com
 
 I build specification-driven tooling, Bash-heavy systems utilities, and practical AI/human workflow scaffolds.
 
