@@ -36,10 +36,6 @@ A reusable template for building project-specific specification repositories. It
 
 A starter repository for spec-first human/Codex collaboration. It provides workflow authority, session handoff structure, and an issue-driven path for implementation work.
 
-### `sentinel_spec`
-
-A structured engineering specification repository for Sentinel, organized into canonical sections, subsystem specs, reference material, and archived source splits.
-
 ### `ricebox`
 A Linux CLI that validates themes, inspects app configs, safely applies themes to
   supported user config files, and exports native theme files.
@@ -50,8 +46,7 @@ A Linux CLI that validates themes, inspects app configs, safely applies themes t
 The folders in this workspace currently break down into a few clear groups:
 
 - Product/tool repositories: `autopsyctl`, `bash-diamonds`, `codex_wrapper`, `ricebox`
-- Spec and workflow repositories: `spec-foundry`, `codex-pair-spec-template`, `sentinel_spec`
-- Shell environment utilities: `bash_cleanup`
+- Spec and workflow repositories: `spec-foundry`, `codex-pair-spec-template`
 - Early or currently sparse scaffold: `the_warden`
 
 ## Working Style
