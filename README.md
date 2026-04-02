@@ -15,7 +15,10 @@ This profile currently centers on repositories that tighten the path from idea -
 
 ### `autopsyctl`
 
-Specification-driven CLI tooling for evidence collection and artifact reporting. The current command surface covers collection, schema inspection, target listing, and report-oriented analysis commands such as `summary`, `processes`, `modules`, `mounts`, `net`, and `report`.
+autopsyctl is a command-line tool for collecting machine data and turning those artifacts into
+usable outputs like process lists, network views, mounts, module inventories, summaries, and
+reports.
+
 
 ### `bash-diamonds`
 
@@ -38,8 +41,9 @@ A starter repository for spec-first human/Codex collaboration. It provides workf
 A structured engineering specification repository for Sentinel, organized into canonical sections, subsystem specs, reference material, and archived source splits.
 
 ### `ricebox`
+A Linux CLI that validates themes, inspects app configs, safely applies themes to
+  supported user config files, and exports native theme files.
 
-A bootstrap scaffold for the `ricebox` runtime repository, organized around an authoritative runtime specification and supporting evidence for implementation.
 
 ## Workspace Snapshot
 
