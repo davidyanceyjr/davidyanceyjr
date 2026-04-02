@@ -38,8 +38,11 @@ A starter repository for spec-first human/Codex collaboration. It provides workf
 
 ### `ricebox`
 A Linux CLI that validates themes, inspects app configs, safely applies themes to
-  supported user config files, and exports native theme files.
+supported user config files, and exports native theme files.
 
+### 'warden'
+warden is a specification-first systemd backend for ward, implementing deterministic D-Bus unit
+control, cgroup attachment, lifecycle reconciliation, and journald integration.
 
 ## Workspace Snapshot
 
