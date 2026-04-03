@@ -16,7 +16,8 @@ This profile currently centers on repositories that tighten the path from idea -
 ### `autopsyctl`
 
 autopsyctl is a command-line tool for collecting machine data and turning those artifacts into
-usable outputs like process lists, network views, mounts, module inventories, summaries, and
+usable outputs like process lists, collect: accept cwd-relative --output paths per spec
+Problem autopsyctl collect --output <path> currently rejects cwd-relative output targets such as ./collector.json as CLI misuse even though the act…network views, mounts, module inventories, summaries, and
 reports.
 
 
@@ -32,7 +33,7 @@ A Bash wrapper for running the Codex CLI inside a `systemd` sandbox with explici
 
 A reusable template for building project-specific specification repositories. It is designed for turning rough ideas into handoff-ready spec packages with human-gated AI assistance.
 
-### `codex-pair-spec-template`
+### `codex-pair-spec-engine`
 
 A starter repository for spec-first human/Codex collaboration. It provides workflow authority, session handoff structure, and an issue-driven path for implementation work.
 
