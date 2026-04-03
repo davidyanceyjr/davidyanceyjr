@@ -33,7 +33,7 @@ A Bash wrapper for running the Codex CLI inside a `systemd` sandbox with explici
 
 A reusable template for building project-specific specification repositories. It is designed for turning rough ideas into handoff-ready spec packages with human-gated AI assistance.
 
-### `codex-pair-spec-engine`
+### `codex-spec-engine`
 
 A starter repository for spec-first human/Codex collaboration. It provides workflow authority, session handoff structure, and an issue-driven path for implementation work.
 
