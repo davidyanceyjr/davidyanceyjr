@@ -29,13 +29,10 @@ A suite of Bash loadable builtins for line-oriented text processing. This repo f
 
 A Bash wrapper for running the Codex CLI inside a `systemd` sandbox with explicit filesystem controls. The goal is to keep the tool useful in real repositories without granting uncontrolled host access.
 
-### `spec-foundry`
+### `spec-forge`
 
-A reusable template for building project-specific specification repositories. It is designed for turning rough ideas into handoff-ready spec packages with human-gated AI assistance.
+**spec-forge is a documentation-first specification workflow template designed to turn raw ideas or existing specs into implementation-ready specifications through a controlled, auditable, and human-gated process.**
 
-### `codex-spec-engine`
-
-A starter repository for spec-first human/Codex collaboration. It provides workflow authority, session handoff structure, and an issue-driven path for implementation work.
 
 ### `ricebox`
 A Linux CLI that validates themes, inspects app configs, safely applies themes to supported user config files, and exports native theme files.
