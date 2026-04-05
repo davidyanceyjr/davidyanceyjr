@@ -1,61 +1,45 @@
-# davidyanceyjr@gmail.com
+# David Yancey Jr.
 
-I build specification-driven tooling, Bash-heavy systems utilities, and practical AI/human workflow scaffolds.
+I build specification-driven tooling, shell-native utilities, and repository workflows that make AI/human collaboration reviewable instead of ad hoc.
 
-This profile currently centers on repositories that tighten the path from idea -> specification -> implementation -> verification.
+Most of the work here falls into two lanes:
 
-## Focus
-
-- Specification-first engineering workflows
-- Bash CLI and shell-native tooling
-- Secure operator tooling and sandboxed execution
-- Reusable templates for AI-assisted development
+- practical CLI tooling for Linux and Bash-heavy environments
+- templates and scaffolds for moving from idea to spec to implementation with clear authority and handoff
 
 ## Featured Repositories
 
-### `autopsyctl`
+### [warden](https://github.com/davidyanceyjr/warden)
 
-autopsyctl is a command-line tool for collecting machine data and turning those artifacts into
-usable outputs like process lists, collect: accept cwd-relative --output paths per spec
-Problem autopsyctl collect --output <path> currently rejects cwd-relative output targets such as ./collector.json as CLI misuse even though the act…network views, mounts, module inventories, summaries, and
-reports.
+Early-stage Linux workload control focused on a strict `systemd` backend. The current repo is centered on an implementation-grade backend specification and C foundations for unit naming and backend initialization, with the goal of controlled execution, policy enforcement, and observable lifecycle management.
 
+### [spec-foundry](https://github.com/davidyanceyjr/spec-foundry)
 
-### `bash-diamonds`
+A workflow template for taking an approved specification into bounded, issue-backed implementation work. It is built for teams that want repository state, not chat history, to hold the active workflow, handoff, and implementation authority.
 
-A suite of Bash loadable builtins for line-oriented text processing. This repo focuses on stream processing, shell-native ergonomics, and contract-preserving behavior backed by specs and tests.
+### [spec-forge](https://github.com/davidyanceyjr/spec-forge)
 
-### `codex_wrapper`
+A specification-first template for turning a rough idea or an existing draft into an implementation-ready spec. The workflow is intentionally human-gated: establish `vision.md`, derive the spec, tighten ambiguity, run readiness audits, then hand off to implementation.
 
-A Bash wrapper for running the Codex CLI inside a `systemd` sandbox with explicit filesystem controls. The goal is to keep the tool useful in real repositories without granting uncontrolled host access.
+### [ricebox](https://github.com/davidyanceyjr/ricebox)
 
-### `spec-forge`
+A spec-driven Linux CLI for validating themes, planning safe config changes, and applying supported theming changes across user tools. The current implementation has working parser and validation foundations, plus partial `apply` support, with more runtime surface still in progress.
 
-**spec-forge is a documentation-first specification workflow template designed to turn raw ideas or existing specs into implementation-ready specifications through a controlled, auditable, and human-gated process.**
+### [bash-diamonds](https://github.com/davidyanceyjr/bash-diamonds)
 
+A suite of Bash loadable builtins for line-oriented text processing. It is implemented in C, designed around stream processing and shell ergonomics, and backed by focused docs plus Bats-based conformance tests for commands like `fields`, `match`, `count`, `table`, `filter`, and `replace`.
 
-### `ricebox`
-A Linux CLI that validates themes, inspects app configs, safely applies themes to supported user config files, and exports native theme files.
+### [autopsyctl](https://github.com/davidyanceyjr/autopsyctl)
 
-### 'warden'
-Controlled execution of workloads with strict lifecycle, policy, and observability guarantees on Linux systems using systemd.
-
-
-## Workspace Snapshot
-
-The folders in this workspace currently break down into a few clear groups:
-
-- Product/tool repositories: `autopsyctl`, `bash-diamonds`, `codex_wrapper`, `ricebox`
-- Spec and workflow repositories: `spec-foundry`, `codex-pair-spec-template`
-- Early or currently sparse scaffold: `the_warden`
+A specification-driven CLI for collecting machine data and turning report artifacts into usable summaries, process views, module inventories, mount views, network views, and reports. The repository combines a C command-line tool with a disciplined AI/human workflow for controlled iteration.
 
 ## Working Style
 
-- Specs before code when behavior is still ambiguous
-- Small, reviewable implementation slices
-- Repository state as workflow memory
-- Tests and validation wired into normal development flow
+- Specs before implementation when behavior is still ambiguous
+- Small, reviewable slices tied to explicit workflow state
+- Repository-local handoffs instead of session memory
+- Tests and validation wired into the normal development loop
 
-## Tech Notes
+## Stack
 
-Most of the work here leans on Bash, shell tooling, Git/GitHub workflows, and repository-local operating contracts for AI-assisted engineering.
+Most of these projects are built with Bash, C, Git/GitHub workflow conventions, and repository-local operating contracts for AI-assisted engineering.
