@@ -33,6 +33,9 @@ A suite of Bash loadable builtins for line-oriented text processing. It is imple
 
 A specification-driven CLI for collecting machine data and turning report artifacts into usable summaries, process views, module inventories, mount views, network views, and reports. The repository combines a C command-line tool with a disciplined AI/human workflow for controlled iteration.
 
+### [prox](https://github.com/davidyanceyjr/prox).
+prox is the repository for pxprop, a terminal-first prompt optimization CLI. pxprop accepts one complete prompt unit, preserves the original exactly, applies a deterministic normalization pipeline, and returns optimized output together with diagnostics, provenance, and metrics.
+
 ## Working Style
 
 - Specs before implementation when behavior is still ambiguous
