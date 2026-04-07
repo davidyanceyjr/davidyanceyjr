@@ -1,11 +1,27 @@
 # David Yancey Jr.
 
-I build specification-driven tooling, shell-native utilities, and repository workflows that make AI/human collaboration reviewable instead of ad hoc.
+I design and build Linux-based systems that make AI-assisted development structured, reviewable, and reliable.
 
-Most of the work here falls into two lanes:
+Certified Linux Administrator working in Bash-centric environments, with a focus on CLI tooling, repository workflows, and specification-first development. My work centers on building real systems with clear boundaries and observable behavior—especially where AI is involved in the loop.
 
-- practical CLI tooling for Linux and Bash-heavy environments
-- templates and scaffolds for moving from idea to spec to implementation with clear authority and handoff
+I develop AI-assisted workflows that operate as systems, not black boxes: prompts are versioned, execution is stepwise and inspectable, and outputs are tied back to specifications and repository state.
+
+Representative systems:
+
+AI workflow systems — deterministic prompt processing, normalization, and diagnostics with human-in-the-loop control
+Specification-first pipelines — idea → spec → implementation with explicit handoff and traceability
+Linux workload control systems — managed execution with policy, lifecycle visibility, and system integration
+Shell-native CLI tooling — Bash-driven automation and composable utilities for real environments
+Machine inspection and reporting — structured data collection and operational visibility
+
+Key areas:
+
+Bash-driven automation and Linux CLI systems
+Specification-first workflows that reduce ambiguity and rework
+Repository design for maintainability, collaboration, and auditability
+AI-assisted systems with observable steps, diagnostics, and human control
+
+I focus on building systems that can be inspected, debugged, and trusted—designed for real use, with clear interfaces and repeatable behavior.
 
 ## Featured Repositories
 
