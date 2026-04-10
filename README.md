@@ -1,5 +1,6 @@
 # David Yancey Jr.
 
+<<<<<<< HEAD
 I design and build Linux-based systems that make AI-assisted development structured, reviewable, and reliable.
 
 Certified Linux Administrator working in Bash-centric environments, with a focus on CLI tooling, repository workflows, and specification-first development. My work centers on building real systems with clear boundaries and observable behavior—especially where AI is involved in the loop.
@@ -22,43 +23,67 @@ Repository design for maintainability, collaboration, and auditability
 AI-assisted systems with observable steps, diagnostics, and human control
 
 I focus on building systems that can be inspected, debugged, and trusted—designed for real use, with clear interfaces and repeatable behavior.
+=======
+I build repository-native AI workflows that keep authority, handoff, and implementation state in versioned artifacts instead of chat memory.
+
+The focus here is specification-driven delivery with Codex, agents, skills, and GitHub-tracked execution:
+
+- shape intent into an implementation-ready spec
+- project the spec into bounded tracked work
+- execute with AI assistance inside explicit repository rules
+- validate, review, and hand off from repository state
+
+## Workflow Focus
+
+The core model is simple:
+
+`idea -> vision -> specification -> tracked slices -> implementation -> validation -> review -> handoff`
+
+What matters is where that state lives. I am interested in workflows where:
+
+- the spec is the controlling artifact
+- agents and skills operate inside repository contracts
+- implementation is bounded and reviewable
+- GitHub issues, branches, and PRs reflect actual workflow state
+- another human or another Codex session can resume from the repository without reconstructing context from prior chat
+>>>>>>> 790dca0 (update: README focus change.)
 
 ## Featured Repositories
 
-### [warden](https://github.com/davidyanceyjr/warden)
+### [spec-forge](https://github.com/davidyanceyjr/spec-forge)
 
-Early-stage Linux workload control focused on a strict `systemd` backend. The current repo is centered on an implementation-grade backend specification and C foundations for unit naming and backend initialization, with the goal of controlled execution, policy enforcement, and observable lifecycle management.
+Specification formation workflow. This is the front end of the system: move from an idea or an existing draft into a durable, implementation-ready specification with explicit human gates and repository-resident handoff state.
 
 ### [spec-foundry](https://github.com/davidyanceyjr/spec-foundry)
 
-A workflow template for taking an approved specification into bounded, issue-backed implementation work. It is built for teams that want repository state, not chat history, to hold the active workflow, handoff, and implementation authority.
+Specification-to-implementation workflow. This is the execution template: take a controlling spec, reconcile it into bounded implementation slices, and carry those slices through branch, pair, test, review, delivery, and finish.
 
-### [spec-forge](https://github.com/davidyanceyjr/spec-forge)
+### [specfndry-testing](https://github.com/davidyanceyjr/specfndry-testing)
 
-A specification-first template for turning a rough idea or an existing draft into an implementation-ready spec. The workflow is intentionally human-gated: establish `vision.md`, derive the spec, tighten ambiguity, run readiness audits, then hand off to implementation.
+Working demonstration repository. This shows the workflow applied to a real implementation exercise, including spec-controlled development, issue-backed execution, validation, and a shipped CLI product instead of a template-only scaffold.
 
-### [ricebox](https://github.com/davidyanceyjr/ricebox)
+### [codex_wrapper](https://github.com/davidyanceyjr/codex_wrapper)
 
-A spec-driven Linux CLI for validating themes, planning safe config changes, and applying supported theming changes across user tools. The current implementation has working parser and validation foundations, plus partial `apply` support, with more runtime surface still in progress.
+Execution boundary for Codex. This repo is part of the practical operating layer: a wrapper for running Codex inside a controlled sandbox while preserving a fast CLI workflow for repository work.
 
-### [bash-diamonds](https://github.com/davidyanceyjr/bash-diamonds)
+## Why These Repos Matter Together
 
-A suite of Bash loadable builtins for line-oriented text processing. It is implemented in C, designed around stream processing and shell ergonomics, and backed by focused docs plus Bats-based conformance tests for commands like `fields`, `match`, `count`, `table`, `filter`, and `replace`.
+These repositories are meant to be read as one workflow stack:
 
-### [autopsyctl](https://github.com/davidyanceyjr/autopsyctl)
-
-A specification-driven CLI for collecting machine data and turning report artifacts into usable summaries, process views, module inventories, mount views, network views, and reports. The repository combines a C command-line tool with a disciplined AI/human workflow for controlled iteration.
+- `spec-forge` demonstrates how intent becomes a durable spec
+- `spec-foundry` demonstrates how that spec becomes tracked implementation work
+- `specfndry-testing` demonstrates the model on a real project
+- `codex_wrapper` demonstrates how the AI execution environment itself can be controlled instead of treated as a black box
 
 ### [prox](https://github.com/davidyanceyjr/prox)
 prox is the repository for pxprop, a terminal-first prompt optimization CLI. pxprop accepts one complete prompt unit, preserves the original exactly, applies a deterministic normalization pipeline, and returns optimized output together with diagnostics, provenance, and metrics.
 
 ## Working Style
 
-- Specs before implementation when behavior is still ambiguous
-- Small, reviewable slices tied to explicit workflow state
-- Repository-local handoffs instead of session memory
-- Tests and validation wired into the normal development loop
+- specification before implementation when behavior is still open
+- Codex, agents, and skills constrained by repository-local contracts
+- repository handoff over conversational memory
+- bounded issue-backed slices over ad hoc execution
+- GitHub used for visible tracking, review, and delivery state
 
-## Stack
-
-Most of these projects are built with Bash, C, Git/GitHub workflow conventions, and repository-local operating contracts for AI-assisted engineering.
+If you are interested in AI-assisted engineering that is auditable, resumable, and driven by explicit repository authority, that is the through-line of the work here.
