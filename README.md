@@ -1,6 +1,5 @@
 # David Yancey Jr.
 
-<<<<<<< HEAD
 I design and build Linux-based systems that make AI-assisted development structured, reviewable, and reliable.
 
 Certified Linux Administrator working in Bash-centric environments, with a focus on CLI tooling, repository workflows, and specification-first development. My work centers on building real systems with clear boundaries and observable behavior—especially where AI is involved in the loop.
