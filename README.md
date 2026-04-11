@@ -38,12 +38,6 @@ It demonstrates that the approach can be applied to real product work, not just 
 
 The goal is to make AI tooling more practical for real environments where safety and system access matter.
 
-### [prox](https://github.com/davidyanceyjr/prox)
-
-`prox` is a terminal-first prompt tooling project.
-
-Its purpose is to make prompt work more consistent, inspectable, and easier to improve over time.
-
 ## What This Work Is About
 
 Taken together, these repositories reflect the kind of problems I like to solve:
