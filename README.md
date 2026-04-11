@@ -1,50 +1,48 @@
 # David Yancey Jr.
 
-I design and build practical Linux-based systems that help teams use AI in software development without losing clarity, control, or accountability.
+I build practical workflow infrastructure for teams that want to use AI in software delivery without giving up reviewability, control, or operational clarity.
 
-My work sits at the intersection of Linux, automation, developer tooling, and AI-assisted engineering.
-I focus on making complex technical work easier to understand, easier to review, and easier to hand off.
+The core suite I am developing is:
 
-The common thread across these repositories is simple:
+`spec-forge -> spec-foundry -> product`
 
-- turning rough ideas into clear plans
-- breaking implementation into manageable, trackable work
-- building tools that make AI safer and more useful in real environments
-- reducing confusion, rework, and hidden decision-making
+with `spec_sync` and `codex_wrapper` supporting the path between specification, implementation, and controlled execution.
 
-## Featured Repositories
+## Workflow Suite
 
 ### [spec-forge](https://github.com/davidyanceyjr/spec-forge)
 
-`spec-forge` is focused on the earliest stage of software delivery: turning an idea into a clear, buildable specification.
+`spec-forge` is the front end of the workflow.
 
-Its purpose is to help teams get aligned on the real goal before development starts.
+It turns an idea, rough notes, or an existing document into an implementation-ready specification that can be reviewed, tightened, and handed off cleanly.
 
 ### [spec-foundry](https://github.com/davidyanceyjr/spec-foundry)
 
-`spec-foundry` takes the next step by turning a finished specification into structured implementation work.
+`spec-foundry` takes the approved specification and turns it into bounded, issue-backed implementation work.
 
-The emphasis is on visibility, reviewability, and smoother handoff across contributors.
+Its focus is disciplined execution: clear slices, explicit handoffs, and a repository workflow that can be resumed without relying on chat memory.
 
-### [specfndry-testing](https://github.com/davidyanceyjr/specfndry-testing)
+### [spec_sync](https://github.com/davidyanceyjr/spec_sync)
 
-`specfndry-testing` is the proof point.
+`spec_sync` is the reconciliation layer.
 
-It demonstrates that the approach can be applied to real product work, not just described as a process.
+It keeps a structured specification and GitHub issue inventory aligned so implementation work stays anchored to named requirements instead of drifting through ad hoc ticketing.
 
 ### [codex_wrapper](https://github.com/davidyanceyjr/codex_wrapper)
 
-`codex_wrapper` is a control layer for running Codex with clearer operating boundaries.
+`codex_wrapper` is the operating boundary around AI execution.
 
-The goal is to make AI tooling more practical for real environments where safety and system access matter.
+It runs Codex inside a controlled sandbox with explicit filesystem access rules so repository workflows can move quickly without treating system access as an afterthought.
 
-## What This Work Is About
+## What The Repositories Are Doing Together
 
-Taken together, these repositories reflect the kind of problems I like to solve:
+Taken as a suite, these repositories are aimed at one problem:
 
-- improving how teams move from idea to implementation
-- creating developer workflows that are easier to review and maintain
-- building Linux- and CLI-friendly tooling for real operational use
-- making AI-assisted work more structured and dependable
+- make specification work durable before implementation starts
+- project specification into bounded implementation slices
+- keep issue state synchronized with requirement identity
+- run AI-assisted work inside clearer operational boundaries
 
-I am especially interested in roles involving developer infrastructure, automation, AI tooling, repository workflows, and Linux-based systems work.
+This is workflow infrastructure for taking work from concept to product with less ambiguity, less hidden state, and better handoff between people and tools.
+
+I am especially interested in developer infrastructure, automation, repository workflow design, AI tooling, and Linux-based systems work.
