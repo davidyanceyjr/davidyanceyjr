@@ -2,13 +2,6 @@
 
 I build developer tooling for specification-driven delivery, AI-assisted repository workflows, and pragmatic Unix-style automation.
 
-The main workflow suite I am developing is:
-
-`spec-forge -> spec-foundry -> product`
-
-with `spec_sync` and `codex_wrapper` supporting that path.
-
-## Workflow Suite
 
 ### [codex_wrapper](https://github.com/davidyanceyjr/codex_wrapper)
 
