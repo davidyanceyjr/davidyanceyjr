@@ -17,4 +17,4 @@ It is aimed at AI-assisted repository work where operating boundaries and host s
 
 It is separate from the spec workflow repos, but aligned with the same preference for explicit contracts, composable tools, and reviewable behavior.
 
-I am especially interested in developer infrastructure, automation, repository workflow design, AI tooling, CLI ergonomics, and Linux-based systems work.
+I am especially interested in developer infrastructure, containers/vm, automation, AI tooling, CLI ergonomics, and Linux-based systems work.
